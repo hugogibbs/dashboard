@@ -7,7 +7,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(200px, 300px) 3fr;
-    grid-template-rows: 30vh 70vh;
+    grid-template-rows: 25vh 75vh;
     font-weight: bolder;
 }
 
@@ -27,12 +27,6 @@ body {
 
 
 }
-
-.boxes {
-    background-color: lightsteelblue;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}   
 
 
 .title {
@@ -112,9 +106,7 @@ a {
 
 .header2 {
     display: grid;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    grid-template-columns: 80px 300px;
+    grid-template-columns: 80px 300px 500px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -127,4 +119,70 @@ a {
 .username {
     font-size: 22px;
     padding-top: 5px;
+}
+
+.headerLine5 {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 30px;
+    grid-column: 3 / 4;
+    padding-left: 140px;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+button.new, button.upload, button.share {
+    background-color: dodgerblue;
+    border-radius: 20px;
+    color: #f9faf8;
+    border-style: none;
+
+}
+
+.boxes {
+    background-color: #e5e7eb;
+}
+
+.projects {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.boxGrid {
+    background-color: #e5e7eb;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 130px);
+}   
+
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+    background-color: #f9faf8;
+    border-radius: 10px;
+}
+
+.boxTitle {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.boxContent {
+    font-weight: lighter;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icons {
+    padding-left: 160px;
+}
+
+.star, .eye, .fork {
+    padding-left: 10px;
 }
