@@ -6,8 +6,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-columns: minmax(200px, 300px) 3fr;
+    grid-template-rows: 30vh 70vh;
     font-weight: bolder;
 }
 
@@ -64,8 +64,8 @@ body {
 .header1 {
     display: grid;
     grid-template-columns: 600px 200px;
-    padding-top: 20px;
     padding-bottom: 20px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     
@@ -102,4 +102,29 @@ input {
 a {
     text-decoration: none;
     color: black;
+}
+
+.user2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.header2 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    grid-template-columns: 80px 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.hi {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.username {
+    font-size: 22px;
+    padding-top: 5px;
 }
